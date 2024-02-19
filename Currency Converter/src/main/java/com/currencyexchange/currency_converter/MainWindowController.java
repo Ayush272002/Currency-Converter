@@ -68,6 +68,7 @@ public class MainWindowController implements Initializable
         String num = AmountBox.getText();
         if(num == null || num.isEmpty() || !isNumeric(num))
         {
+            ExchangeRate.setText(null);
             ConvertField.setText("Wrong Format");
             return;
         }
@@ -76,6 +77,7 @@ public class MainWindowController implements Initializable
 
         if(val <= 0)
         {
+            ExchangeRate.setText(null);
             ConvertField.setText("Negative and 0 currency Conversion not possible");
             return;
         }
@@ -85,6 +87,7 @@ public class MainWindowController implements Initializable
 
         if(Objects.equals(from, to))
         {
+            ExchangeRate.setText(null);
             ConvertField.setText("No conversion needed as both of them are same");
             return;
         }
