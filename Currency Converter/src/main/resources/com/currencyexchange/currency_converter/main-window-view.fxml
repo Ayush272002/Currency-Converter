@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.currencyexchange.currency_converter.MainWindowController">
+   <children>
+      <Label layoutX="219.0" layoutY="30.0" style="-fx-font-family: 'Monotype Corsiva'; -fx-font-size: 24px; -fx-font-style: italic;" text="Currency Converter" />
+      <VBox fx:id="VBox" layoutX="56.0" layoutY="96.0" prefHeight="175.0" prefWidth="486.0" style="-fx-padding: 10px;">
+         <children>
+            <Label text="Amount" />
+            <Region prefHeight="9.0" prefWidth="486.0" />
+            <TextField fx:id="AmountBox" />
+            <Region prefHeight="31.0" prefWidth="486.0" />
+            <HBox prefHeight="30.0" prefWidth="486.0">
+               <children>
+                  <Label text="From " />
+                  <ChoiceBox fx:id="FromCurrency" prefHeight="26.0" prefWidth="102.0" />
+                  <Region prefHeight="31.0" prefWidth="184.0" />
+                  <Label text="To " />
+                  <ChoiceBox fx:id="ToCurrency" prefHeight="26.0" prefWidth="122.0" />
+               </children>
+            </HBox>
+            <Region prefHeight="62.0" prefWidth="486.0" />
+            <HBox prefHeight="37.0" prefWidth="486.0">
+               <children>
+                  <Region prefHeight="57.0" prefWidth="139.0" />
+                  <Button fx:id="ConvertButton" mnemonicParsing="false" onAction="#ConvertButtonClicked" prefHeight="26.0" prefWidth="86.0" text="Convert" />
+                  <Region prefHeight="46.0" prefWidth="70.0" />
+                  <Button fx:id="RevertButton" mnemonicParsing="false" onAction="#ResetButtonClicked" prefHeight="26.0" prefWidth="86.0" text="Reset" />
+                  <Region prefHeight="57.0" prefWidth="135.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="ConvertField" layoutX="96.0" layoutY="333.0" prefHeight="17.0" prefWidth="394.0" />
+      <Label fx:id="ExchangeRate" layoutX="102.0" layoutY="304.0" prefHeight="17.0" prefWidth="394.0" />
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+</Pane>

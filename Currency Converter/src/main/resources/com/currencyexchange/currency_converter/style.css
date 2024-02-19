@@ -1,0 +1,56 @@
+#RevertButton {
+    -fx-background-color: #d32f2f; /* Dark red */
+    -fx-border-style: none;
+    -fx-text-fill: white; /* Set text color to white */
+    -fx-background-radius: 12px; /* Set background radius for a curved button */
+}
+
+#RevertButton:hover {
+    -fx-effect: dropshadow(gaussian, #d32f2f , 20, 0, 0, 0); /* Increase the shadow radius on hover */
+}
+
+#ConvertButton {
+    -fx-background-color: #388e3c; /* Dark green */
+    -fx-border-style: none;
+    -fx-text-fill: white; /* Set text color to white */
+    -fx-background-radius: 12px; /* Set background radius for a curved button */
+}
+
+#ConvertButton:hover {
+    -fx-effect: dropshadow(gaussian, #4caf50, 20, 0, 0, 0); /* Increase the shadow radius on hover */
+}
+
+#VBox {
+    -fx-background-color: #808080FF; /* grey */
+    -fx-padding: 10px; /* Add padding to the VBox */
+    -fx-spacing: 10px; /* Add spacing between children */
+}
+
+#Pane {
+    -fx-background-color: #2196f3; /* Light blue */
+}
+
+#AmountBox, #FromCurrency, #ToCurrency {
+    -fx-background-color: #ffffff; /* White */
+    -fx-border-color: #ccc; /* Light grey */
+    -fx-border-radius: 5px; /* Set border radius */
+    -fx-border-width: 1px; /* Set border width */
+}
+
+#AmountBox .label, #FromCurrency .label, #ToCurrency .label {
+    -fx-text-fill: black; /* Set text color to black for labels inside choice boxes */
+}
+
+.label {
+    -fx-font-size: 14px; /* Set font size for labels */
+    -fx-text-fill: white; /* Set text color to white */
+}
+
+#ConvertField, #ExchangeRate {
+    -fx-font-size: 16px; /* Set font size for result labels */
+    -fx-text-fill: white; /* Set text color to white */
+}
+
+#ConvertField:filled, #ExchangeRate:filled {
+    -fx-background-color: #ffff99; /* Yellow background color */
+}
